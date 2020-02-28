@@ -11,4 +11,13 @@ public class FindMaximum {
             max=i2;
         return max;
     }
+
+    public float maximumFloat(Float v, Float v1, Float v2) {
+        Float max=v;
+        if(v1.compareTo(max) > 0 )
+            max= v1;
+        if(v2.compareTo(max)>0)
+            max=v2;
+        return max;
+    }
 }
