@@ -3,30 +3,13 @@ package com.Bridgelabz;
 public class FindMaximum {
 
 
-    public int maximumInteger(Integer i, Integer i1, Integer i2) {
-        Integer max=i;
-        if(i1.compareTo(max) > 0 )
-            max= i1;
-        if(i2.compareTo(max)>0)
-            max=i2;
+    public <E extends Comparable<E>> E getMaximum (E a, E b, E c){
+        E max=a;
+        if(b.compareTo(max) > 0 )
+            max = b;
+        if(c.compareTo(max) > 0)
+            max=c;
         return max;
     }
 
-    public float maximumFloat(Float v, Float v1, Float v2) {
-        Float max=v;
-        if(v1.compareTo(max) > 0 )
-            max= v1;
-        if(v2.compareTo(max)>0)
-            max=v2;
-        return max;
-    }
-
-    public String maximumString(String X, String Y, String Z) {
-        String max=X;
-        if(Y.compareTo(max) > 0 )
-            max= Y;
-        if(Z.compareTo(max)>0)
-            max=Z;
-        return max;
-    }
 }
