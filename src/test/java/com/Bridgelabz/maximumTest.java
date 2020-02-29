@@ -15,7 +15,7 @@ public class maximumTest {
 
     @Test
     public void givenNumbers_WhenProper_ShouldReturnSecondNumber() {
-        FindMaximum findMaximum = new FindMaximum(44, 74, 11);
+        FindMaximum findMaximum = new FindMaximum(44, 74, 11,34);
         int max = (int)findMaximum.getMaximum();
         Assert.assertEquals(74, max);
 
@@ -23,16 +23,16 @@ public class maximumTest {
 
     @Test
     public void givenNumbers_WhenProper_ShouldReturnThirdNumber() {
-        FindMaximum findMaximum = new FindMaximum(44, 7, 112);
+        FindMaximum findMaximum = new FindMaximum(44, 7,93, 112);
         int max = (int)findMaximum.getMaximum();
         Assert.assertEquals(112, max);
     }
 
     @Test
     public void givenFloatNumbers_WhenProper_ShouldReturnFirstNumber() {
-        FindMaximum findMaximum = new FindMaximum(6.1f, 2.1f, 1.1f);
+        FindMaximum findMaximum = new FindMaximum(6.1f, 2.1f,9.1f, 1.1f);
         Float max = (Float) findMaximum.getMaximum();
-        Assert.assertEquals(6.1f, max, 0.1);
+        Assert.assertEquals(9.1f, max, 0.1);
     }
 
     @Test
@@ -51,9 +51,9 @@ public class maximumTest {
 
     @Test
     public void givenStrings_WhenProper_ShouldReturnFirstString() {
-        FindMaximum findMaximum = new FindMaximum("Zebra", "Peach", "Banana");
+        FindMaximum findMaximum = new FindMaximum("Zebra", "Peach", "mystar","Banana");
         String max = (String) findMaximum.getMaximum();
-        Assert.assertEquals("Zebra", max);
+        Assert.assertEquals("mystar", max);
     }
 
     @Test
@@ -69,7 +69,5 @@ public class maximumTest {
         String max = (String) findMaximum.getMaximum();
         Assert.assertEquals("Orange", max);
     }
-
-
 
 }
