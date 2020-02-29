@@ -1,7 +1,10 @@
 package com.Bridgelabz;
-
 import org.junit.Assert;
 import org.junit.Test;
+import org.junit.runners.Parameterized;
+
+import java.util.Arrays;
+import java.util.Collection;
 
 public class maximumTest {
 
@@ -10,7 +13,6 @@ public class maximumTest {
         FindMaximum findMaximum = new FindMaximum(44, 7, 11);
         int max = (int) findMaximum.getMaximum();
         Assert.assertEquals(44, max);
-
     }
 
     @Test
@@ -70,4 +72,5 @@ public class maximumTest {
         Assert.assertEquals("Orange", max);
     }
 
-}
+
+ }
